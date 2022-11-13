@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "dhKbYLc2oa4Fn/nKkisyrOBclYPuHRuHGTdgzA8HzOBIIRLXxRqwq+Yrq5eBiCPAexHIeznpdCN1W0W1mbnCuA==",
+  "success": true,
+  "projectFilePath": "C:\\Projects\\Akira-AnimeList\\src\\Akira-AnimeList.UI\\Akira-AnimeList.UI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\SosiskaKiller\\.nuget\\packages\\materialdesigncolors\\2.1.0-ci358\\materialdesigncolors.2.1.0-ci358.nupkg.sha512",
+    "C:\\Users\\SosiskaKiller\\.nuget\\packages\\materialdesignthemes\\4.7.0-ci358\\materialdesignthemes.4.7.0-ci358.nupkg.sha512"
+  ],
+  "logs": []
+}

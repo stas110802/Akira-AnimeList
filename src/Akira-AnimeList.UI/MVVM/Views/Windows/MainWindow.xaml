@@ -1,0 +1,27 @@
+<Window x:Class="Akira_AnimeList.UI.MVVM.Views.Windows.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:Akira_AnimeList.UI.MVVM.Views.Windows"
+        xmlns:viewModel="clr-namespace:Akira_AnimeList.UI.MVVM.ViewModels"
+        d:DataContext="{d:DesignInstance Type=viewModel:MainWindowVM}"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1200" Width="1800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <ContentPresenter Grid.Row="0"
+                          Content="{Binding}" 
+                          ContentTemplate="{StaticResource MainToolBar}"/>
+        <StackPanel Grid.Row="1">
+            <Border Height="50"/>
+            <Frame  Content="{Binding ScreenFrame}"
+                    NavigationUIVisibility="Hidden"
+                    Margin="25 0 0 0"/>
+        </StackPanel>
+       
+    </Grid>
+</Window>
