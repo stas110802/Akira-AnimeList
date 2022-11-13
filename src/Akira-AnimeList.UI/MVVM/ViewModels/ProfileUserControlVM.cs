@@ -6,11 +6,14 @@ namespace Akira_AnimeList.UI.MVVM.ViewModels;
 
 public class ProfileUserControlVM : ObservableObject
 {
+    private User _user;
     private ImageParams _backgroundImageParams;
     private ImageParams _profileImageParams;
 
-    public ProfileUserControlVM()
+
+    public ProfileUserControlVM(User user)
     {
+        _user = user;
         _backgroundImageParams = new ImageParams
         {
             FilePath = "C:\\Icons\\HRTgriwt8AkYNIOshe-tOZq_EA-iowppszwKQ2fPhnTWjC596WSnvisg2ir4fUcaCigZm4X16dbxj4M9q0LorKwY.jpg",
@@ -19,6 +22,8 @@ public class ProfileUserControlVM : ObservableObject
         };
         _profileImageParams = new ImageParams { FilePath = "C:\\Icons\\ava.jpg" };
     }
+
+    public static string UploadIconPath => $"{PathList.IconsPath}\\photo-camera.png";
 
     public ImageParams BackgroundImageParams
     {
@@ -30,5 +35,11 @@ public class ProfileUserControlVM : ObservableObject
     {
         get => _profileImageParams;
         set => Set(ref _profileImageParams, value, nameof(ProfileImageParams));
+    }
+
+    public User User
+    {
+        get => _user;
+        set => Set(ref _user, value, nameof(User));
     }
 }

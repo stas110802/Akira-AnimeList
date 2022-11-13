@@ -5,6 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:Akira_AnimeList.UI.MVVM.Views.UC"
              xmlns:viewModel="clr-namespace:Akira_AnimeList.UI.MVVM.ViewModels"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              d:DataContext="{d:DesignInstance Type=viewModel:ProfileUserControlVM}"
              mc:Ignorable="d"
              d:DesignHeight="1000" d:DesignWidth="1800">
@@ -24,15 +25,79 @@
                        Width="{Binding BackgroundImageParams.Width}" 
                        Stretch="Fill"
                        Height="{Binding BackgroundImageParams.Height}"/>
-                <Image Source="{Binding ProfileImageParams.FilePath}" 
-                       Stretch="Fill"
-                       Height="180" Width="180"
-                       Margin="0 -90 600 0">
-                    <Image.Clip>
-                        <RectangleGeometry RadiusX="100" RadiusY="100"
-                                           Rect="0,0,180,180"/>
-                    </Image.Clip>
-                </Image>
+                <StackPanel Orientation="Horizontal">
+                    <StackPanel >
+                        <Image Source="{Binding ProfileImageParams.FilePath}" 
+                               Stretch="Fill" HorizontalAlignment="Left"
+                               Height="200" Width="200"
+                               Margin="20 -100 0 0">
+                            <Image.Clip>
+                                <RectangleGeometry RadiusX="100" RadiusY="100"
+                                                   Rect="0,0,200,200"/>
+                            </Image.Clip>
+                        </Image>
+                        <Button Width="200"
+                                Height="38" HorizontalAlignment="Left"
+                                Margin="20 10 0 0">
+                            <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+                                <Image Source="{Binding UploadIconPath}" 
+                                       HorizontalAlignment="Left"
+                                       Width="17" Height="17"/>
+                                <Border Width="10"/>
+                                <TextBlock Text="Обновить Аватарку" FontSize="15"/>
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
+                    <Border Width="25"/>
+                    <StackPanel Width="650">
+                        <TextBlock Text="USERNAME" FontSize="28"/>
+                        <TextBlock Text="на сайте с 9 марта 2022" 
+                                   FontSize="18" FontWeight="Light"
+                                   Foreground="#9ca3a9"/>
+                        <Border Height="0.5" Background="#9ca3a9"/>
+                        <StackPanel Orientation="Horizontal" Height="40">
+                            <TextBlock Text="Имя: " FontSize="20" Width="150"/>
+                            <Border Width="20"/>
+                            <TextBlock Text="{Binding User.Name}"
+                                       FontSize="20" FontWeight="Light"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Height="40">
+                            <TextBlock Text="Фамилия: " FontSize="20" Width="150"/>
+                            <Border Width="20"/>
+                            <TextBlock Text="{Binding User.Surname}" 
+                                       FontSize="20" FontWeight="Light"/>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Grid.Row="1">
+                <Border Height="40"/>
+                <TextBlock Text="Статистика" FontSize="35"
+                           FontWeight="Bold" Height="70"/>
+                <TextBlock Text="Аниме" FontSize="30" FontWeight="Normal" Height="50"/>
+                <TextBlock Text="Время за просмотром: " FontSize="20" Height="40"
+                           FontWeight="Normal"/>
+                <StackPanel Orientation="Horizontal" Height="40">
+                    <Border Height="15" Width="110" Background="Aqua" VerticalAlignment="Top"/>
+                    <Border Height="15" Width="175" Background="Red" VerticalAlignment="Top"/>
+                    <Border Height="15" Width="355" Background="Green" VerticalAlignment="Top"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <StackPanel Orientation="Horizontal" Height="50">
+                        <Ellipse Height="30" Width="30" Fill="Aqua"></Ellipse>
+                        <Button Content="Смотрю" Background="Transparent" Width="150" 
+                                Foreground="DarkRed" BorderThickness="0"></Button>
+                        <Border Width="150"/>
+                        <TextBlock Text="15" FontWeight="Light" FontSize="18" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Height="50">
+                        <Ellipse Height="30" Width="30" Fill="Green"></Ellipse>
+                        <Button Content="Запланировано" Background="Transparent" Width="150"
+                                Foreground="DarkRed" BorderThickness="0"></Button>
+                        <Border Width="150"/>
+                        <TextBlock Text="145" FontWeight="Light" FontSize="18" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </StackPanel>
             </StackPanel>
         </Grid>
     </Grid>

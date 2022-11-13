@@ -10,7 +10,7 @@ public static class PathList
 
     public static string AssetsPath => $"{SolutionPath}\\assets";
     public static string ImagesPath => $"{AssetsPath}\\images";
-    
+    public static string IconsPath => $"{AssetsPath}\\icons";
     private static string GetPath(string mask)
     {
         return Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, mask));
