@@ -7,15 +7,17 @@
              xmlns:viewModel="clr-namespace:Akira_AnimeList.UI.MVVM.ViewModels"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              d:DataContext="{d:DesignInstance Type=viewModel:ProfileUserControlVM}"
-             mc:Ignorable="d"
-             d:DesignHeight="1000" d:DesignWidth="1800">
+             mc:Ignorable="d" 
+             Background="#e9ebee" 
+             d:DesignHeight="1000"
+             d:DesignWidth="1800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
            
-        <Grid Grid.Column="0">
+        <Grid Grid.Column="0" Background="White">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition/>
@@ -91,6 +93,20 @@
                         <TextBlock Text="15" FontWeight="Light" FontSize="18" VerticalAlignment="Center"/>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Height="50">
+                        <Ellipse Height="30" Width="30" Fill="Aqua"></Ellipse>
+                        <Button Content="Просмотрено" Background="Transparent" Width="150" 
+                                Foreground="DarkRed" BorderThickness="0"></Button>
+                        <Border Width="150"/>
+                        <TextBlock Text="15" FontWeight="Light" FontSize="18" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Height="50">
+                        <Ellipse Height="30" Width="30" Fill="Aqua"></Ellipse>
+                        <Button Content="Брошено" Background="Transparent" Width="150" 
+                                Foreground="DarkRed" BorderThickness="0"></Button>
+                        <Border Width="150"/>
+                        <TextBlock Text="15" FontWeight="Light" FontSize="18" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Height="50">
                         <Ellipse Height="30" Width="30" Fill="Green"></Ellipse>
                         <Button Content="Запланировано" Background="Transparent" Width="150"
                                 Foreground="DarkRed" BorderThickness="0"></Button>
@@ -100,5 +116,6 @@
                 </StackPanel>
             </StackPanel>
         </Grid>
+        
     </Grid>
 </UserControl>

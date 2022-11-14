@@ -2,6 +2,12 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Akira-AnimeList.UI", "src\Akira-AnimeList.UI\Akira-AnimeList.UI.csproj", "{A0A33B42-67AA-4192-AFB1-0339C9562820}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Akira-AnimeList.RestApi", "Akira-AnimeList.RestApi\Akira-AnimeList.RestApi.csproj", "{B9B8B4AC-AD08-4D93-AAFC-FA032A2A50AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Akira-AnimeList.AdditionalToolLibrary", "Akira-AnimeList.AdditionalToolLibrary\Akira-AnimeList.AdditionalToolLibrary.csproj", "{F64B0BED-3827-4D60-AA03-E96C53AF0F43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Akira-AnimeList.RestApiClient", "Akira-AnimeList.RestApiClient\Akira-AnimeList.RestApiClient.csproj", "{42C0F4E4-5EEE-454A-B081-CD6DEEC3ACB1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +18,17 @@ Global
 		{A0A33B42-67AA-4192-AFB1-0339C9562820}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0A33B42-67AA-4192-AFB1-0339C9562820}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0A33B42-67AA-4192-AFB1-0339C9562820}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9B8B4AC-AD08-4D93-AAFC-FA032A2A50AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9B8B4AC-AD08-4D93-AAFC-FA032A2A50AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9B8B4AC-AD08-4D93-AAFC-FA032A2A50AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9B8B4AC-AD08-4D93-AAFC-FA032A2A50AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F64B0BED-3827-4D60-AA03-E96C53AF0F43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F64B0BED-3827-4D60-AA03-E96C53AF0F43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F64B0BED-3827-4D60-AA03-E96C53AF0F43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F64B0BED-3827-4D60-AA03-E96C53AF0F43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42C0F4E4-5EEE-454A-B081-CD6DEEC3ACB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42C0F4E4-5EEE-454A-B081-CD6DEEC3ACB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42C0F4E4-5EEE-454A-B081-CD6DEEC3ACB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42C0F4E4-5EEE-454A-B081-CD6DEEC3ACB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

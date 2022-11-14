@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Akira_AnimeList.UI.MVVM.Views.Windows"
         xmlns:viewModel="clr-namespace:Akira_AnimeList.UI.MVVM.ViewModels"
         d:DataContext="{d:DesignInstance Type=viewModel:MainWindowVM}"
-        mc:Ignorable="d"
+        mc:Ignorable="d" Background="#e9ebee"
         Title="MainWindow" Height="1200" Width="1800">
     <Grid>
         <Grid.RowDefinitions>
@@ -16,12 +16,13 @@
         <ContentPresenter Grid.Row="0"
                           Content="{Binding}" 
                           ContentTemplate="{StaticResource MainToolBar}"/>
-        <StackPanel Grid.Row="1">
-            <Border Height="50"/>
-            <Frame  Content="{Binding ScreenFrame}"
-                    NavigationUIVisibility="Hidden"
-                    Margin="25 0 0 0"/>
-        </StackPanel>
-       
+        <ScrollViewer Grid.Row="1">
+           <StackPanel >
+               <Border Height="50"/>
+               <Frame  Content="{Binding ScreenFrame}"
+                       NavigationUIVisibility="Hidden"
+                       Margin="25 0 0 0"/>
+            </StackPanel>
+       </ScrollViewer>
     </Grid>
 </Window>
