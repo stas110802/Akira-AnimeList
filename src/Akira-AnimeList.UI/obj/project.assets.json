@@ -33,6 +33,70 @@
         "build": {
           "build/MaterialDesignThemes.targets": {}
         }
+      },
+      "Newtonsoft.Json/13.0.2-beta3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "RestSharp/108.0.3-alpha.0.11": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/RestSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/RestSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Akira-AnimeList.AdditionalToolLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Akira-AnimeList.AdditionalToolLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Akira-AnimeList.AdditionalToolLibrary.dll": {}
+        }
+      },
+      "Akira-AnimeList.RestApi/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Akira-AnimeList.AdditionalToolLibrary": "1.0.0",
+          "Newtonsoft.Json": "13.0.2-beta3",
+          "RestSharp": "108.0.3-alpha.0.11"
+        },
+        "compile": {
+          "bin/placeholder/Akira-AnimeList.RestApi.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Akira-AnimeList.RestApi.dll": {}
+        }
+      },
+      "Akira-AnimeList.RestApiClient/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Akira-AnimeList.RestApi": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Akira-AnimeList.RestApiClient.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Akira-AnimeList.RestApiClient.dll": {}
+        }
       }
     }
   },
@@ -96,10 +160,74 @@
         "materialdesignthemes.nuspec",
         "tools/VisualStudioToolsManifest.xml"
       ]
+    },
+    "Newtonsoft.Json/13.0.2-beta3": {
+      "sha512": "HyxAbMCBdNVrOASMvpBaGY4FzyxaIAqVKfr96ByQti7qtw6bdsQThpwHFhkzaPIq8g+sAk1ueUsDFZ2VTsSebA==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.2-beta3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.2-beta3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "RestSharp/108.0.3-alpha.0.11": {
+      "sha512": "xmRExUs3B6B2IYSBUFd0gHHT4J2/16AgeHSN2ciaX/NhXQbd5mcEpnsFBkcDG5GNKCq5PBQylRQT1ZKnnPgJEQ==",
+      "type": "package",
+      "path": "restsharp/108.0.3-alpha.0.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/RestSharp.dll",
+        "lib/net5.0/RestSharp.xml",
+        "lib/net6.0/RestSharp.dll",
+        "lib/net6.0/RestSharp.xml",
+        "lib/netstandard2.0/RestSharp.dll",
+        "lib/netstandard2.0/RestSharp.xml",
+        "restsharp.108.0.3-alpha.0.11.nupkg.sha512",
+        "restsharp.nuspec",
+        "restsharp.png"
+      ]
+    },
+    "Akira-AnimeList.AdditionalToolLibrary/1.0.0": {
+      "type": "project",
+      "path": "../Akira-AnimeList.AdditionalToolLibrary/Akira-AnimeList.AdditionalToolLibrary.csproj",
+      "msbuildProject": "../Akira-AnimeList.AdditionalToolLibrary/Akira-AnimeList.AdditionalToolLibrary.csproj"
+    },
+    "Akira-AnimeList.RestApi/1.0.0": {
+      "type": "project",
+      "path": "../Akira-AnimeList.RestApi/Akira-AnimeList.RestApi.csproj",
+      "msbuildProject": "../Akira-AnimeList.RestApi/Akira-AnimeList.RestApi.csproj"
+    },
+    "Akira-AnimeList.RestApiClient/1.0.0": {
+      "type": "project",
+      "path": "../Akira-AnimeList.RestApiClient/Akira-AnimeList.RestApiClient.csproj",
+      "msbuildProject": "../Akira-AnimeList.RestApiClient/Akira-AnimeList.RestApiClient.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
+      "Akira-AnimeList.RestApiClient >= 1.0.0",
       "MaterialDesignThemes >= 4.7.0-ci358"
     ]
   },
@@ -127,7 +255,11 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Projects\\Akira-AnimeList\\src\\Akira-AnimeList.RestApiClient\\Akira-AnimeList.RestApiClient.csproj": {
+              "projectPath": "C:\\Projects\\Akira-AnimeList\\src\\Akira-AnimeList.RestApiClient\\Akira-AnimeList.RestApiClient.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

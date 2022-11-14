@@ -1,5 +1,4 @@
 using Akira_AnimeList.AdditionalToolLibrary.Extensions;
-using Akira_AnimeList.RestApi.Utilites.Extensions;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using RestSharp;
@@ -15,7 +14,7 @@ public sealed class BaseRestApi
         _uri = uri;
     }
     
-    public async Task<JToken?> GetResponseAsync(Enum endpoint, Dictionary<string, string>? parameters = null)
+    public async Task<T?> GetResponseAsync<T>(Enum endpoint, Dictionary<string, string>? parameters = null)
     {
         var endpointValue = endpoint.ToDescription();
         var body = GenerateParameters(parameters);
@@ -23,9 +22,21 @@ public sealed class BaseRestApi
         
         var request = new RestRequest();// base request is GET           
         var response = (await client.ExecuteAsync(request)).Content;
-        var deserelizeResponse = JsonConvert.DeserializeObject<JToken>(response);
+        var deserelizeResponse = JsonConvert.DeserializeObject<T>(response);
 
         return deserelizeResponse;
+    }
+    
+    public async Task<string?> GetResponseStringAsync(Enum endpoint, Dictionary<string, string>? parameters = null)
+    {
+        var endpointValue = endpoint.ToDescription();
+        var body = GenerateParameters(parameters);
+        var client = new RestClient(_uri + endpointValue + body);
+        
+        var request = new RestRequest();// base request is GET           
+        var response = (await client.ExecuteAsync(request)).Content;
+
+        return response;
     }
     
     private static string? GenerateParameters(Dictionary<string, string>? postBody)

@@ -1,6 +1,9 @@
 using Akira_AnimeList.RestApi.Api;
 using Akira_AnimeList.RestApiClient.Models;
+using Akira_AnimeList.RestApiClient.Models.Roots;
 using Akira_AnimeList.RestApiClient.Types;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace Akira_AnimeList.RestApiClient.Clients;
 
@@ -17,7 +20,7 @@ public sealed class JikanApiClient
     {
         try
         {
-            var response = (await _server.GetResponseAsync(JikanEndpoint.Anime))?["data"];
+            var response = (await _server.GetResponseAsync<JToken>(JikanEndpoint.Anime))?["data"];
             
             foreach (var item in response)
             {
@@ -32,10 +35,7 @@ public sealed class JikanApiClient
 
     public async Task<Result<List<AnimeInformation>>> GetAnimeByName(string name)
     {
-        var result = new Result<List<AnimeInformation>>
-        {
-            Data = new List<AnimeInformation>()
-        };
+        var result = new Result<List<AnimeInformation>>();
         
         var parameters = new Dictionary<string, string>()
         {
@@ -44,17 +44,9 @@ public sealed class JikanApiClient
 
         try
         {
-            var response = (await _server.GetResponseAsync(JikanEndpoint.Anime, parameters))?["data"];
-
-            foreach (var item in response)
-            {
-                var info = new AnimeInformation();
-                var titleName = item?["title_english"];
-                var image = item?["images"]?["jpg"]?["image_url"];
-                //var url = item?["url"];                    
-                //var episodesCount = item?["episodes"];
-                result.Data.Add(info);
-            }
+            var response = await _server.GetResponseAsync<AnimeInformationData>(JikanEndpoint.Anime, parameters);
+            if (response == null) throw new Exception("Nullable response");
+            result.Data = response.AnimeInformation;
         }
         catch (Exception error)
         {

@@ -32,3 +32,11 @@ C:\Projects\Akira-AnimeList\src\Akira-AnimeList.UI\obj\Debug\net6.0-windows\MVVM
 C:\Projects\Akira-AnimeList\src\Akira-AnimeList.UI\obj\Debug\net6.0-windows\MVVM\Views\UC\RegistrationUserControl.g.cs
 C:\Projects\Akira-AnimeList\src\Akira-AnimeList.UI\obj\Debug\net6.0-windows\MVVM\Views\UC\RegistrationUserControl.baml
 C:\Projects\Akira-AnimeList\src\Akira-AnimeList.UI\obj\Debug\net6.0-windows\ResourceDictionary\ToolBarDictionary.baml
+C:\Projects\Akira-AnimeList\src\Akira-AnimeList.UI\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Projects\Akira-AnimeList\src\Akira-AnimeList.UI\bin\Debug\net6.0-windows\RestSharp.dll
+C:\Projects\Akira-AnimeList\src\Akira-AnimeList.UI\bin\Debug\net6.0-windows\Akira-AnimeList.AdditionalToolLibrary.dll
+C:\Projects\Akira-AnimeList\src\Akira-AnimeList.UI\bin\Debug\net6.0-windows\Akira-AnimeList.RestApi.dll
+C:\Projects\Akira-AnimeList\src\Akira-AnimeList.UI\bin\Debug\net6.0-windows\Akira-AnimeList.RestApiClient.dll
+C:\Projects\Akira-AnimeList\src\Akira-AnimeList.UI\bin\Debug\net6.0-windows\Akira-AnimeList.RestApiClient.pdb
+C:\Projects\Akira-AnimeList\src\Akira-AnimeList.UI\bin\Debug\net6.0-windows\Akira-AnimeList.AdditionalToolLibrary.pdb
+C:\Projects\Akira-AnimeList\src\Akira-AnimeList.UI\bin\Debug\net6.0-windows\Akira-AnimeList.RestApi.pdb

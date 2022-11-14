@@ -16,4 +16,8 @@
       <Folder Include="Behaviors" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Akira-AnimeList.RestApiClient\Akira-AnimeList.RestApiClient.csproj" />
+    </ItemGroup>
+
 </Project>

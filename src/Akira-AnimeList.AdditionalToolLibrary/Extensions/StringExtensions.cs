@@ -1,4 +1,4 @@
-namespace Akira_AnimeList.RestApi.Utilites.Extensions;
+namespace Akira_AnimeList.AdditionalToolLibrary.Extensions;
 
 public static class StringExtensions
 {
@@ -14,5 +14,4 @@ public static class StringExtensions
             data = data.Remove(data.Length - 1, 1);
         }            
     }
-    
 }

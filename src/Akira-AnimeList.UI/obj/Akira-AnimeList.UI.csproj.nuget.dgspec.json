@@ -4,6 +4,183 @@
     "C:\\Projects\\Akira-AnimeList\\src\\Akira-AnimeList.UI\\Akira-AnimeList.UI.csproj": {}
   },
   "projects": {
+    "C:\\Projects\\Akira-AnimeList\\src\\Akira-AnimeList.AdditionalToolLibrary\\Akira-AnimeList.AdditionalToolLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\Akira-AnimeList\\src\\Akira-AnimeList.AdditionalToolLibrary\\Akira-AnimeList.AdditionalToolLibrary.csproj",
+        "projectName": "Akira-AnimeList.AdditionalToolLibrary",
+        "projectPath": "C:\\Projects\\Akira-AnimeList\\src\\Akira-AnimeList.AdditionalToolLibrary\\Akira-AnimeList.AdditionalToolLibrary.csproj",
+        "packagesPath": "C:\\Users\\SosiskaKiller\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\Akira-AnimeList\\src\\Akira-AnimeList.AdditionalToolLibrary\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\SosiskaKiller\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\SosiskaKiller\\.dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\Akira-AnimeList\\src\\Akira-AnimeList.RestApiClient\\Akira-AnimeList.RestApiClient.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\Akira-AnimeList\\src\\Akira-AnimeList.RestApiClient\\Akira-AnimeList.RestApiClient.csproj",
+        "projectName": "Akira-AnimeList.RestApiClient",
+        "projectPath": "C:\\Projects\\Akira-AnimeList\\src\\Akira-AnimeList.RestApiClient\\Akira-AnimeList.RestApiClient.csproj",
+        "packagesPath": "C:\\Users\\SosiskaKiller\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\Akira-AnimeList\\src\\Akira-AnimeList.RestApiClient\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\SosiskaKiller\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Projects\\Akira-AnimeList\\src\\Akira-AnimeList.RestApi\\Akira-AnimeList.RestApi.csproj": {
+                "projectPath": "C:\\Projects\\Akira-AnimeList\\src\\Akira-AnimeList.RestApi\\Akira-AnimeList.RestApi.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\SosiskaKiller\\.dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\Akira-AnimeList\\src\\Akira-AnimeList.RestApi\\Akira-AnimeList.RestApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\Akira-AnimeList\\src\\Akira-AnimeList.RestApi\\Akira-AnimeList.RestApi.csproj",
+        "projectName": "Akira-AnimeList.RestApi",
+        "projectPath": "C:\\Projects\\Akira-AnimeList\\src\\Akira-AnimeList.RestApi\\Akira-AnimeList.RestApi.csproj",
+        "packagesPath": "C:\\Users\\SosiskaKiller\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\Akira-AnimeList\\src\\Akira-AnimeList.RestApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\SosiskaKiller\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Projects\\Akira-AnimeList\\src\\Akira-AnimeList.AdditionalToolLibrary\\Akira-AnimeList.AdditionalToolLibrary.csproj": {
+                "projectPath": "C:\\Projects\\Akira-AnimeList\\src\\Akira-AnimeList.AdditionalToolLibrary\\Akira-AnimeList.AdditionalToolLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2-beta3, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[108.0.3-alpha.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\SosiskaKiller\\.dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Projects\\Akira-AnimeList\\src\\Akira-AnimeList.UI\\Akira-AnimeList.UI.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -25,7 +202,11 @@
         "frameworks": {
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Projects\\Akira-AnimeList\\src\\Akira-AnimeList.RestApiClient\\Akira-AnimeList.RestApiClient.csproj": {
+                "projectPath": "C:\\Projects\\Akira-AnimeList\\src\\Akira-AnimeList.RestApiClient\\Akira-AnimeList.RestApiClient.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
